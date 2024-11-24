@@ -7,7 +7,13 @@
       }
   ],
   "routes": [
-      { "src": "/static/(.*)", "dest": "/static/$1" },
-      { "src": "(.*)", "dest": "projectapp/wsgi.py" }
+      {
+          "src": "/static/(.*)",
+          "dest": "/static/$1"
+      },
+      {
+          "src": "(.*)",
+          "dest": "projectapp/wsgi.py"
+      }
   ]
 }
